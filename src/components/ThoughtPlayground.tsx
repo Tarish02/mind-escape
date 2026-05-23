@@ -2,9 +2,26 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const SEED_WORDS = [
-  "calm", "breathe", "flow", "drift", "still", "soft", "warm", "quiet",
-  "open", "slow", "light", "ease", "space", "echo", "bloom", "rest",
-  "float", "release", "now", "here",
+  "calm",
+  "breathe",
+  "flow",
+  "drift",
+  "still",
+  "soft",
+  "warm",
+  "quiet",
+  "open",
+  "slow",
+  "light",
+  "ease",
+  "space",
+  "echo",
+  "bloom",
+  "rest",
+  "float",
+  "release",
+  "now",
+  "here",
 ];
 
 interface FloatingWord {

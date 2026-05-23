@@ -7,10 +7,18 @@ export function Navigation() {
         Zenith Flow / 003
       </div>
       <div className="hidden gap-10 font-mono text-[10px] uppercase tracking-[0.3em] opacity-60 md:flex">
-        <a href="#quotes" className="transition-opacity hover:opacity-100">Quotes</a>
-        <a href="#games" className="transition-opacity hover:opacity-100">Games</a>
-        <a href="#playground" className="transition-opacity hover:opacity-100">Playground</a>
-        <Link to="/rituals" className="transition-opacity hover:opacity-100">Rituals</Link>
+        <a href="#quotes" className="transition-opacity hover:opacity-100">
+          Quotes
+        </a>
+        <a href="#games" className="transition-opacity hover:opacity-100">
+          Games
+        </a>
+        <a href="#playground" className="transition-opacity hover:opacity-100">
+          Playground
+        </a>
+        <Link to="/rituals" className="transition-opacity hover:opacity-100">
+          Rituals
+        </Link>
       </div>
       <button
         data-cursor-hover

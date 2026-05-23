@@ -1,6 +1,6 @@
 @import "tailwindcss" source(none);
-@source "../src";
 @import "tw-animate-css";
+@source "../src";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -59,8 +59,8 @@
   --ring: oklch(0.82 0.16 82 / 0.5);
   --glass: oklch(0.2 0.01 260 / 0.4);
 
-  --font-display: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
   --gradient-orb-accent: radial-gradient(circle, oklch(0.82 0.16 82 / 0.25), transparent 70%);
   --gradient-orb-cool: radial-gradient(circle, oklch(0.7 0.05 240 / 0.18), transparent 70%);
@@ -78,7 +78,8 @@
   * {
     border-color: var(--color-border);
   }
-  html, body {
+  html,
+  body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-display);
@@ -91,36 +92,75 @@
 }
 
 @layer utilities {
-  .font-display { font-family: var(--font-display); }
-  .font-mono { font-family: var(--font-mono); }
-  .bg-glass { background-color: var(--glass); }
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .bg-glass {
+    background-color: var(--glass);
+  }
   .text-grain {
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/></svg>");
   }
 }
 
 @keyframes reveal-up {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes orb-float {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(40px, -30px); }
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(40px, -30px);
+  }
 }
 @keyframes orb-float-alt {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(-30px, 20px); }
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-30px, 20px);
+  }
 }
 @keyframes drift {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 @keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
-.animate-reveal { animation: reveal-up 1.2s var(--ease-out-expo) both; }
-.animate-orb { animation: orb-float 14s ease-in-out infinite; }
-.animate-orb-alt { animation: orb-float-alt 18s ease-in-out infinite; }
-.animate-drift { animation: drift 6s ease-in-out infinite; }
+.animate-reveal {
+  animation: reveal-up 1.2s var(--ease-out-expo) both;
+}
+.animate-orb {
+  animation: orb-float 14s ease-in-out infinite;
+}
+.animate-orb-alt {
+  animation: orb-float-alt 18s ease-in-out infinite;
+}
+.animate-drift {
+  animation: drift 6s ease-in-out infinite;
+}

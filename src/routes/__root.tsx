@@ -74,17 +74,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Lovable App" },
-      { name: "description", content: "Zenith Flow is a premium interactive website for corporate professionals to relax and explore visually satisfying content." },
+      {
+        name: "description",
+        content:
+          "Zenith Flow is a premium interactive website for corporate professionals to relax and explore visually satisfying content.",
+      },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Zenith Flow is a premium interactive website for corporate professionals to relax and explore visually satisfying content." },
+      {
+        property: "og:description",
+        content:
+          "Zenith Flow is a premium interactive website for corporate professionals to relax and explore visually satisfying content.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Zenith Flow is a premium interactive website for corporate professionals to relax and explore visually satisfying content." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7d4a9e83-236b-4f43-98f3-1a39986984dd/id-preview-eacd4e91--fade9064-10a9-4087-b536-5e1cfe9dffc0.lovable.app-1779359931224.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7d4a9e83-236b-4f43-98f3-1a39986984dd/id-preview-eacd4e91--fade9064-10a9-4087-b536-5e1cfe9dffc0.lovable.app-1779359931224.png" },
+      {
+        name: "twitter:description",
+        content:
+          "Zenith Flow is a premium interactive website for corporate professionals to relax and explore visually satisfying content.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7d4a9e83-236b-4f43-98f3-1a39986984dd/id-preview-eacd4e91--fade9064-10a9-4087-b536-5e1cfe9dffc0.lovable.app-1779359931224.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7d4a9e83-236b-4f43-98f3-1a39986984dd/id-preview-eacd4e91--fade9064-10a9-4087-b536-5e1cfe9dffc0.lovable.app-1779359931224.png",
+      },
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: faviconUrl },

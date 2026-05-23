@@ -29,7 +29,7 @@ export function MemoryTiles() {
         id: `${idx}-${i}`,
         word,
         pairId: idx,
-      }))
+      })),
     ).sort(() => Math.random() - 0.5);
     setTiles(newTiles);
     setFlipped(new Set());

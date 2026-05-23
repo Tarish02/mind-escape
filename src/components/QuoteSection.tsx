@@ -16,7 +16,8 @@ export function QuoteSection() {
           Quote of the day
         </span>
         <p className="relative z-10 max-w-4xl text-pretty text-3xl font-medium leading-tight tracking-tight md:text-6xl">
-          “The universe is not outside of you. Look inside yourself; everything that you want, you already are.”
+          “The universe is not outside of you. Look inside yourself; everything that you want, you
+          already are.”
         </p>
         <div className="relative z-10 mt-12 flex items-center justify-between">
           <span className="font-mono text-xs text-muted-foreground">/ Rumi</span>

@@ -27,7 +27,8 @@ export function MoodCard({
     el.style.transform = `perspective(1000px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateY(-8px)`;
   };
   const onLeave = () => {
-    if (ref.current) ref.current.style.transform = "perspective(1000px) rotateY(0) rotateX(0) translateY(0)";
+    if (ref.current)
+      ref.current.style.transform = "perspective(1000px) rotateY(0) rotateX(0) translateY(0)";
   };
 
   return (

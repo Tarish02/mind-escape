@@ -23,7 +23,7 @@ export function FooterCta() {
           EST. 2026 — Sensory Systems
         </p>
         <p className="font-mono text-[10px] uppercase tracking-[0.3em] opacity-40">
-          Created by / Designed by — TARISH 
+          Created by / Designed by — TARISH
         </p>
         <div className="flex gap-6 font-mono text-[10px] uppercase tracking-[0.3em] opacity-40">
           {/* <a href="#" className="transition-opacity hover:opacity-100">Privacy</a>

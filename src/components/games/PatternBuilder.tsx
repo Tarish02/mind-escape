@@ -12,14 +12,10 @@ export function PatternBuilder() {
   const [seed, setSeed] = useState(0);
   const [userPattern, setUserPattern] = useState<number[]>([]);
 
-  const targetPattern = useMemo(
-    () => PATTERNS[seed % PATTERNS.length],
-    [seed]
-  );
+  const targetPattern = useMemo(() => PATTERNS[seed % PATTERNS.length], [seed]);
   const symbols = useMemo(
-    () =>
-      targetPattern.slice(0, Math.min(3, Math.ceil(targetPattern.length / 2))),
-    [targetPattern]
+    () => targetPattern.slice(0, Math.min(3, Math.ceil(targetPattern.length / 2))),
+    [targetPattern],
   );
 
   const solved =
@@ -36,16 +32,11 @@ export function PatternBuilder() {
       newPattern.length === targetPattern.length &&
       newPattern.every((i, pos) => targetPattern[pos] === symbols[i])
     ) {
-      setTimeout(
-        () => {
-          setSeed((s) => s + 1);
-          setUserPattern([]);
-        },
-        1000
-      );
-    } else if (
-      newPattern.some((i, pos) => targetPattern[pos] !== symbols[i])
-    ) {
+      setTimeout(() => {
+        setSeed((s) => s + 1);
+        setUserPattern([]);
+      }, 1000);
+    } else if (newPattern.some((i, pos) => targetPattern[pos] !== symbols[i])) {
       setTimeout(() => setUserPattern([]), 500);
     }
   };

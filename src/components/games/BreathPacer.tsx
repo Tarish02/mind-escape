@@ -91,8 +91,7 @@ export function BreathPacer() {
 
           <motion.div
             animate={{
-              scale:
-                phase === "inhale" ? 1.4 : phase === "hold" ? 1.4 : 1,
+              scale: phase === "inhale" ? 1.4 : phase === "hold" ? 1.4 : 1,
             }}
             transition={{ duration: phaseDuration, ease: "linear" }}
             className="absolute inset-0 flex items-center justify-center"
@@ -110,9 +109,7 @@ export function BreathPacer() {
               <p className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
                 {phaseText[phase]}
               </p>
-              <p className="text-2xl font-semibold text-accent">
-                {phaseDuration - timer}
-              </p>
+              <p className="text-2xl font-semibold text-accent">{phaseDuration - timer}</p>
             </div>
           </div>
         </div>

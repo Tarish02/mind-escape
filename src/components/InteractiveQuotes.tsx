@@ -123,9 +123,7 @@ export function InteractiveQuotes() {
           <button
             data-cursor-hover
             onClick={() =>
-              setSaved((s) =>
-                isSaved ? s.filter((q) => q.text !== quote.text) : [...s, quote],
-              )
+              setSaved((s) => (isSaved ? s.filter((q) => q.text !== quote.text) : [...s, quote]))
             }
             className={`inline-flex items-center gap-2 rounded-full border px-6 py-3 font-mono text-[11px] uppercase tracking-[0.25em] transition-all ${
               isSaved
@@ -140,9 +138,7 @@ export function InteractiveQuotes() {
             data-cursor-hover
             onClick={() => setAuto((a) => !a)}
             className={`inline-flex items-center gap-2 rounded-full border px-6 py-3 font-mono text-[11px] uppercase tracking-[0.25em] transition-all ${
-              auto
-                ? "border-accent/60 text-accent"
-                : "border-foreground/15 hover:border-accent/60"
+              auto ? "border-accent/60 text-accent" : "border-foreground/15 hover:border-accent/60"
             }`}
           >
             <Sparkles className="h-3.5 w-3.5" />

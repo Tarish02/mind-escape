@@ -44,12 +44,7 @@ export function QuotePuzzle() {
         </button>
       </div>
 
-      <Reorder.Group
-        axis="x"
-        values={order}
-        onReorder={setOrder}
-        className="flex flex-wrap gap-3"
-      >
+      <Reorder.Group axis="x" values={order} onReorder={setOrder} className="flex flex-wrap gap-3">
         {order.map((word, i) => (
           <Reorder.Item
             key={`${word}-${i}-${seed}`}

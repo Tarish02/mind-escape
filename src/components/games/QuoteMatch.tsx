@@ -41,7 +41,7 @@ export function QuoteMatch() {
       shuffled.map((q) => ({
         ...q,
         matched: false,
-      }))
+      })),
     );
     setSelected({ quote: null, author: null });
   }, [seed]);
@@ -65,7 +65,7 @@ export function QuoteMatch() {
 
     if (selectedAuthor === correctAuthor) {
       setMatches((prev) =>
-        prev.map((m, i) => (i === selected.quote ? { ...m, matched: true } : m))
+        prev.map((m, i) => (i === selected.quote ? { ...m, matched: true } : m)),
       );
       setSelected({ quote: null, author: null });
     } else {
@@ -79,7 +79,8 @@ export function QuoteMatch() {
     <div className="rounded-3xl border border-border bg-background/40 p-8 backdrop-blur-md">
       <div className="mb-6 flex items-center justify-between">
         <span className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
-          Match · {solved ? <span className="text-accent">all matched</span> : "pair quotes with authors"}
+          Match ·{" "}
+          {solved ? <span className="text-accent">all matched</span> : "pair quotes with authors"}
         </span>
         <button
           data-cursor-hover

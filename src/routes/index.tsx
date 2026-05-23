@@ -53,7 +53,9 @@ function Index() {
 
       <div className="relative z-10">
         <Navigation />
-        <section id="observatory"><Hero /></section>
+        <section id="observatory">
+          <Hero />
+        </section>
 
         <InteractiveQuotes />
 
@@ -71,14 +73,39 @@ function Index() {
             </h2>
           </div>
           <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-3">
-            <MoodCard index="01" total="03" title="Deep Submergence" description="A heavy-frequency drift for grounding the restless mind." image={cardWaves} delay={0} />
-            <MoodCard index="02" total="03" title="Weightless Drift" description="Floating through the liminal space between tasks." image={cardDrift} delay={0.15} />
-            <MoodCard index="03" total="03" title="Orbital Echo" description="Rhythmic pulses designed for deep focus states." image={cardVibe} delay={0.3} />
+            <MoodCard
+              index="01"
+              total="03"
+              title="Deep Submergence"
+              description="A heavy-frequency drift for grounding the restless mind."
+              image={cardWaves}
+              delay={0}
+            />
+            <MoodCard
+              index="02"
+              total="03"
+              title="Weightless Drift"
+              description="Floating through the liminal space between tasks."
+              image={cardDrift}
+              delay={0.15}
+            />
+            <MoodCard
+              index="03"
+              total="03"
+              title="Orbital Echo"
+              description="Rhythmic pulses designed for deep focus states."
+              image={cardVibe}
+              delay={0.3}
+            />
           </div>
         </section>
 
-        <div id="thoughts"><ThoughtsWall /></div>
-        <div id="rituals"><RitualsSection /></div>
+        <div id="thoughts">
+          <ThoughtsWall />
+        </div>
+        <div id="rituals">
+          <RitualsSection />
+        </div>
 
         <FooterCta />
       </div>

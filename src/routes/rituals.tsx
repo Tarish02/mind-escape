@@ -172,7 +172,9 @@ function RitualsPage() {
                   <div className="mb-6 flex h-36 w-16 items-end justify-center rounded-3xl bg-[#f4e4c8] shadow-inner">
                     <div
                       className={`h-14 w-14 rounded-full bg-orange-300 transition-all duration-500 ${
-                        candleLit ? "opacity-100 shadow-[0_0_24px_rgba(255,184,94,0.75)]" : "opacity-0"
+                        candleLit
+                          ? "opacity-100 shadow-[0_0_24px_rgba(255,184,94,0.75)]"
+                          : "opacity-0"
                       }`}
                     />
                   </div>
@@ -183,7 +185,8 @@ function RitualsPage() {
 
             <div className="space-y-4 text-left">
               <p className="text-sm text-muted-foreground">
-                Light the candle and let the room glow with quiet reflection. Once the flame is alive, the poetry will reveal itself.
+                Light the candle and let the room glow with quiet reflection. Once the flame is
+                alive, the poetry will reveal itself.
               </p>
               <button
                 type="button"
@@ -227,9 +230,12 @@ function RitualsPage() {
               </div>
             ) : (
               <div className="space-y-6 py-24">
-                <h1 className="text-4xl font-semibold tracking-tight">A quiet room, a waiting flame.</h1>
+                <h1 className="text-4xl font-semibold tracking-tight">
+                  A quiet room, a waiting flame.
+                </h1>
                 <p className="text-sm text-muted-foreground">
-                  Press the candle button and the poetry will appear in soft candlelight. This is your blank page ritual.
+                  Press the candle button and the poetry will appear in soft candlelight. This is
+                  your blank page ritual.
                 </p>
               </div>
             )}
@@ -244,7 +250,10 @@ export const Route = createFileRoute("/rituals")({
   head: () => ({
     meta: [
       { title: "Ritual Candle — Poetry by candlelight" },
-      { name: "description", content: "Light the candle and read classic historical poetry in a calm candlelit page." },
+      {
+        name: "description",
+        content: "Light the candle and read classic historical poetry in a calm candlelit page.",
+      },
     ],
   }),
   component: RitualsPage,

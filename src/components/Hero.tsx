@@ -60,7 +60,13 @@ export function Hero() {
   return (
     <section className="relative flex h-screen min-h-[760px] flex-col items-center justify-center overflow-hidden px-4 text-center">
       <div className="absolute inset-0 z-0 opacity-50">
-        <img src={heroSky} alt="" width={1920} height={1088} className="h-full w-full object-cover" />
+        <img
+          src={heroSky}
+          alt=""
+          width={1920}
+          height={1088}
+          className="h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-transparent to-background" />
       </div>
 
@@ -140,9 +146,7 @@ export function Hero() {
         className="absolute bottom-10 z-10 flex flex-col items-center gap-3"
       >
         <div className="h-14 w-px bg-gradient-to-b from-transparent to-foreground" />
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em]">
-          Scroll to descend
-        </span>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em]">Scroll to descend</span>
       </motion.div>
     </section>
   );

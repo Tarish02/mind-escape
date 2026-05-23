@@ -1,7 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const POSITIVE = ["calm", "flow", "ease", "joy", "rest", "light", "open", "bloom", "breathe", "peace"];
+const POSITIVE = [
+  "calm",
+  "flow",
+  "ease",
+  "joy",
+  "rest",
+  "light",
+  "open",
+  "bloom",
+  "breathe",
+  "peace",
+];
 const NEGATIVE = ["stress", "rush", "noise", "burnout", "deadline", "panic", "tense", "rage"];
 
 interface Bubble {
@@ -48,8 +59,8 @@ export function WordCatch({ active }: { active: boolean }) {
     const tick = () => {
       setBubbles((b) =>
         b.map((x) => {
-          let nx = x.x + x.vx;
-          let ny = x.y + x.vy;
+          const nx = x.x + x.vx;
+          const ny = x.y + x.vy;
           let vx = x.vx;
           let vy = x.vy;
           if (nx < 4 || nx > 96) vx = -vx;

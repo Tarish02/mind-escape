@@ -45,11 +45,7 @@ export function ColorMatch() {
       const secondColor = cards.find((c) => c.id === second)?.color;
 
       if (firstColor === secondColor) {
-        setCards((prev) =>
-          prev.map((c) =>
-            newFlipped.has(c.id) ? { ...c, matched: true } : c
-          )
-        );
+        setCards((prev) => prev.map((c) => (newFlipped.has(c.id) ? { ...c, matched: true } : c)));
         setFlipped(new Set());
       } else {
         setTimeout(() => setFlipped(new Set()), 1000);

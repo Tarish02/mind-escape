@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "."
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 304613326a47b89e88b0348994c375b61987ccdf

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Weightless Drift image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1220" />
+      <stop offset="100%" stop-color="#24396d" />
+    </linearGradient>
+    <radialGradient id="p" cx="0.5" cy="0.3" r="0.5">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#74c7ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#g)" />
+  <ellipse cx="640" cy="480" rx="380" ry="240" fill="url(#p)" opacity="0.18" />
+  <ellipse cx="520" cy="940" rx="480" ry="320" fill="url(#p)" opacity="0.12" />
+  <path d="M360 300 C 420 260, 500 260, 560 300 S 660 400 760 380" fill="none" stroke="#8ac9ff" stroke-width="28" stroke-linecap="round" />
+  <path d="M400 420 C 520 380, 640 380, 760 420" fill="none" stroke="#95d4ff" stroke-width="24" stroke-linecap="round" opacity="0.85" />
+  <path d="M340 760 C 420 720, 580 720, 660 760" fill="none" stroke="#adcfff" stroke-width="22" stroke-linecap="round" opacity="0.75" />
+</svg>

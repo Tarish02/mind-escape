@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Orbital Echo image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070914" />
+      <stop offset="100%" stop-color="#141d46" />
+    </linearGradient>
+    <radialGradient id="r" cx="0.45" cy="0.45" r="0.35">
+      <stop offset="0%" stop-color="#ffd47e" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ff8d77" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#g)" />
+  <circle cx="620" cy="760" r="360" fill="none" stroke="#ff9d5c" stroke-width="30" opacity="0.45" />
+  <circle cx="620" cy="760" r="240" fill="none" stroke="#ffd47e" stroke-width="22" opacity="0.55" />
+  <circle cx="620" cy="760" r="140" fill="none" stroke="#ffcf86" stroke-width="18" opacity="0.65" />
+  <circle cx="620" cy="760" r="60" fill="url(#r)" />
+  <path d="M900 320 C 860 360, 760 420, 660 400" fill="none" stroke="#9ec8ff" stroke-width="18" stroke-linecap="round" opacity="0.75" />
+  <path d="M300 1180 C 360 1120, 520 1040, 660 1080" fill="none" stroke="#7ad7ff" stroke-width="16" stroke-linecap="round" opacity="0.65" />
+</svg>

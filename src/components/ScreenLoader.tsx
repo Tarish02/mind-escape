@@ -4,18 +4,29 @@ import { motion, AnimatePresence } from "framer-motion";
 const easeOutExpo: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 export function ScreenLoader() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(() => {
+    // Only show on first load by checking localStorage
+    if (typeof window === "undefined") return false;
+    const hasLoaded = sessionStorage.getItem("__app_first_load_done__");
+    return !hasLoaded;
+  });
   const [animateOut, setAnimateOut] = useState(false);
 
   useEffect(() => {
+    if (!visible) return;
+
     const exitTimer = setTimeout(() => setAnimateOut(true), 2800);
-    const doneTimer = setTimeout(() => setVisible(false), 4200);
+    const doneTimer = setTimeout(() => {
+      setVisible(false);
+      // Mark first load as complete
+      sessionStorage.setItem("__app_first_load_done__", "true");
+    }, 4200);
 
     return () => {
       clearTimeout(exitTimer);
       clearTimeout(doneTimer);
     };
-  }, []);
+  }, [visible]);
 
   if (!visible) return null;
 

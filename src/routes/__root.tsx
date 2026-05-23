@@ -7,6 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
+import { ScreenLoader } from "@/components/ScreenLoader";
 
 import appCss from "../styles.css?url";
 import faviconUrl from "../favicon.svg?url";
@@ -142,6 +143,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <ScreenLoader />
       <Outlet />
     </QueryClientProvider>
   );

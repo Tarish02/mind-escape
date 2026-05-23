@@ -22,7 +22,7 @@ export function FooterCta() {
         <p className="font-mono text-[10px] uppercase tracking-[0.3em] opacity-40">
           EST. 2026 — Sensory Systems
         </p>
-        <p className="font-mono text-[10px] uppercase tracking-[0.3em] opacity-40">
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em]">
           Created by / Designed by — TARISH
         </p>
         <div className="flex gap-6 font-mono text-[10px] uppercase tracking-[0.3em] opacity-40">

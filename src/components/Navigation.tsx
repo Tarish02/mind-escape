@@ -20,12 +20,13 @@ export function Navigation() {
           Rituals
         </Link>
       </div>
-      <button
+      <Link
+        to="/games"
         data-cursor-hover
         className="rounded-full bg-foreground px-5 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-background transition-colors hover:bg-accent"
       >
         Enter Space
-      </button>
+      </Link>
     </nav>
   );
 }

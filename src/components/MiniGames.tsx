@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { WordCatch } from "./games/WordCatch";
 import { QuotePuzzle } from "./games/QuotePuzzle";
@@ -22,8 +22,18 @@ const GAMES = [
 
 type GameId = (typeof GAMES)[number]["id"];
 
-export function MiniGames() {
-  const [game, setGame] = useState<GameId>("catch");
+interface MiniGamesProps {
+  initialGame?: GameId;
+}
+
+export function MiniGames({ initialGame }: MiniGamesProps) {
+  const [game, setGame] = useState<GameId>(initialGame ?? "catch");
+
+  useEffect(() => {
+    if (initialGame && initialGame !== game) {
+      setGame(initialGame);
+    }
+  }, [initialGame, game]);
 
   return (
     <section id="games" className="relative px-6 py-32 md:py-44">
